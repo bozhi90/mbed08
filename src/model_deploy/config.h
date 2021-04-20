@@ -2,7 +2,7 @@
 #define CONFIG_H_
 
 // The number of labels (without negative)
-#define label_num 2
+#define label_num 4
 
 struct Config {
 
@@ -13,6 +13,22 @@ struct Config {
   const int consecutiveInferenceThresholds[label_num] = {20, 10};
 
   const char* output_message[label_num] = {
+        "ANGLE:\n\r"
+        "                  \n\r"
+        "   *              \n\r"
+        "   *              \n\r"
+        "   *              \n\r"
+        "   *              \n\r"
+        "   **********     \n\r"
+        "                  \n\r",
+        "ARC:\n\r"
+        "                  \n\r"
+        "                  \n\r"
+        "     *********    \n\r"
+        "    *         *   \n\r"
+        "   *           *  \n\r"
+        "                  \n\r"
+        "                  \n\r",
         "RING:\n\r"
         "          *       \n\r"
         "       *     *    \n\r"
